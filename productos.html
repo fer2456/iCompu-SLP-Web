@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | Mi Tienda</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <nav>
+        <div class="contenedor-logo">
+            <img src="img/logo.png" alt="Logo" class="logo" id="logo"/>
+        </div>
+      
+      <ul class="nav-links">
+        <div class="active">
+          <li><a  href="index.html">Inicio</a></li>
+        </div>
+        <div>
+          <li><a class="active" href="productos.html">Productos</a></li>
+        </div>
+        <div>
+          <li><a href="reparaciones.html">Reparaciones y Servicios</a></li>
+        </div>
+        <div>
+          <li><a href="contacto.html">Contacto</a></li>
+        </div>
+        <div style="padding-left: 30%;">
+          <form action="login.html"><input type="submit" title="Iniciar sesión" value="Iniciar sesión">
+            </form>
+          </div>
+      <div>
+        <form action="signup.html"><input type="submit" title="Registro" value="Registrarse">
+        </form>
+      </div>
+      </ul>
+      
+    </nav>
+  </header>
+<header class="header">
+    <nav>
+      <ul class="nav-btn">
+        <div class="active">
+            <button class="btnFiltro" data-categoria="todos">Todos</button>
+            <button class="btnFiltro" data-categoria="laptops">Laptops</button>
+            <button class="btnFiltro" data-categoria="ram">RAM</button>
+            <button class="btnFiltro" data-categoria="gpu">Tarjetas gráficas GPU</button>
+            <button class="btnFiltro" data-categoria="cpu">CPU</button>
+            <button class="btnFiltro" data-categoria="celulares">Celulares</button>
+            <button class="btnFiltro" data-categoria="pcs">PCs Armadas</button>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero-productos">
+    <h2>Conoce nuestros productos</h2>
+    <p>Diseñados para ser simples, potentes y hermosos.</p>
+  </section>
+
+  <section class="galProductos">
+    <div data-categoria="celulares">
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="celulares">
+        <img src="img/Cel1.png" alt="Celular X1" class="producto" data-categoria="celulares" >
+            <h3>Celular X1</h3>
+            <p>Pantalla OLED, 5G, cámara cuádruple.</p>
+            <span>$12,999 MXN</span>
+
+        </div>
+        </article>
+
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="celulares">
+        <img src="img/Cel2.png" alt="Celular X2" class="producto" data-categoria="celulares">
+        <h3>Celular x2</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$10,499 MXN</span>
+        </div>
+        </article>
+
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="celulares">
+        <img src="img/Cel3.png" alt="Celular X3" class="producto" data-categoria="celulares">
+        <h3>Celular X3</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$10,499 MXN</span>
+        </div>
+        </article>
+
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="celulares">
+        <img src="img/Cel4.png" alt="Celular X4" class="producto" data-categoria="celulares">
+        <h3>Celular X4</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$10,499 MXN</span>
+        </div>
+        </article>
+
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="celulares">
+        <img src="img/Cel5.png" alt="Celular X5" class="producto" data-categoria="celulares">
+        <h3>Celular X5</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$10,499 MXN</span>
+        </div>
+        </article>
+    </div>
+
+    
+  </section>
+  <section class="galProductos">
+    <div  data-categoria="laptops">
+        <article class="contenidoDis">
+        <img src="img/Lap1.png" alt="Laptop X1" class="producto" data-categoria="laptops" >
+        <div  class="producto" data-categoria="laptops">
+            <h3>Laptop X1</h3>
+            <p>Pantalla OLED, 5G, cámara cuádruple.</p>
+            <span>$12,999 MXN</span>
+        </div>
+
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="laptops">
+        <img src="img/Lap2.png" alt="Laptop X2" class="producto" data-categoria="laptops">
+        <h3>Laptop X2</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$19,899 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="laptops">
+        <img src="img/Lap3.png" alt="Laptop X3" class="producto" data-categoria="laptops">
+        <h3>Laptop X3</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$10,499 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="laptops">
+        <img src="img/Lap4.png" alt="Laptop X4" class="producto" data-categoria="laptops">
+        <h3>Laptop X4</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$15,699 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="laptops">
+        <img src="img/Lap5.png" alt="Laptop X5" class="producto" data-categoria="laptops">
+        <h3>Laptop X5</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$7,599 MXN</span>
+        </div>
+        </article>
+
+    </div>
+
+    
+  </section>
+  <section class="galProductos">
+    <div  data-categoria="ram">
+        <article class="contenidoDis">
+        <img src="img/ram1.png" alt="ramX1" class="producto" data-categoria="ram" >
+        <div  class="producto" data-categoria="ram">
+            <h3>Ram X1</h3>
+            <p>Pantalla OLED, 5G, cámara cuádruple.</p>
+            <span>$12,999 MXN</span>
+        </div>
+
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="ram">
+        <img src="img/ram2.png" alt="ram X2" class="producto" data-categoria="ram">
+        <h3>Ram X2</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$19,899 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="ram">
+        <img src="img/ram3.png" alt="ram X3" class="producto" data-categoria="ram">
+        <h3>Ram X3</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$10,499 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="ram">
+        <img src="img/ram4.png" alt="ram X4" class="producto" data-categoria="ram">
+        <h3>Ram X4</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$15,699 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="ram">
+        <img src="img/ram5.png" alt="ram X5" class="producto" data-categoria="ram">
+        <h3>Ram X5</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$7,599 MXN</span>
+        </div>
+        </article>
+
+    </div>
+
+    
+  </section>
+  <section class="galProductos">
+    <div  data-categoria="gpu">
+        <article class="contenidoDis">
+        <img src="img/gpu1.png" alt="gpu X1" class="producto" data-categoria="gpu" >
+        <div  class="producto" data-categoria="gpu">
+            <h3>GPU X1</h3>
+            <p>Pantalla OLED, 5G, cámara cuádruple.</p>
+            <span>$12,999 MXN</span>
+        </div>
+
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="gpu">
+        <img src="img/gpu2.png" alt="gpu X2" class="producto" data-categoria="gpu">
+        <h3>GPU X2</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$19,899 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="gpu">
+        <img src="img/gpu3.png" alt="gpu X3" class="producto" data-categoria="gpu">
+        <h3>GPU X3</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$10,499 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="gpu">
+        <img src="img/gpu4.png" alt="gpu X4" class="producto" data-categoria="gpu">
+        <h3>GPU X4</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$15,699 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="gpu">
+        <img src="img/gpu5.png" alt="gpu X5" class="producto" data-categoria="gpu">
+        <h3>GPU X5</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$7,599 MXN</span>
+        </div>
+        </article>
+
+    </div>
+
+    
+  </section>
+  <section class="galProductos">
+    <div  data-categoria="cpu">
+        <article class="contenidoDis">
+        <img src="img/cpu1.png" alt="cpu X1" class="producto" data-categoria="cpu" >
+        <div  class="producto" data-categoria="cpu">
+            <h3>Ryzen 7 9800x3D X1</h3>
+            <p>Pantalla OLED, 5G, cámara cuádruple.</p>
+            <span>$12,999 MXN</span>
+        </div>
+
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="cpu">
+        <img src="img/cpu2.png" alt="cpu X2" class="producto" data-categoria="cpu">
+        <h3>Ryzen 7 7800x3D</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$19,899 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="cpu">
+        <img src="img/cpu3.png" alt="cpu X3" class="producto" data-categoria="cpu">
+        <h3>Intel Core Ultra 7 265K X3</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$10,499 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="cpu">
+        <img src="img/cpu4.png" alt="cpu X4" class="producto" data-categoria="cpu">
+        <h3>Intel Core I7-14900k</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$15,699 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="cpu">
+        <img src="img/cpu5.png" alt="cpu X5" class="producto" data-categoria="cpu">
+        <h3>Ryzen 9 9950x3D</h3>
+        <p>Resistencia al agua, batería de 5000mAh.</p>
+        <span>$7,599 MXN</span>
+        </div>
+        </article>
+
+    </div>
+
+    
+  </section>
+  <section class="galProductos">
+    <div  data-categoria="pcs">
+        <article class="contenidoDis">
+        <img src="img/pc1.png" alt="pc X1" class="producto" data-categoria="pcs" >
+        <div  class="producto" data-categoria="pcs">
+            <h3>Ryzen 7 9800x3D RX 9070 XT 32GB RAM DDR5</h3>
+            <p>PC 1</p>
+            <span>$52,999 MXN</span>
+        </div>
+
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="pcs">
+        <img src="img/pc2.png" alt="pc X2" class="producto" data-categoria="pcs">
+        <h3>Ryzen 7 7800x3D RTX 5080 32GB RAM DDR5</h3>
+        <p>PC 2</p>
+        <span>$69,899 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="pcs">
+        <img src="img/pc3.png" alt="pc X3" class="producto" data-categoria="pcs">
+        <h3>Ryzen 7 7800x3D RTX 5080 32GB RAM DDR5</h3>
+        <p>PC 3</p>
+        <span>$90,499 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="pcs">
+        <img src="img/pc4.png" alt="pc X4" class="producto" data-categoria="pcs">
+        <h3>Ryzen 7 9800x3D RTX 5090 32GB RAM DDR5</h3>
+        <p>PC 4</p>
+        <span>$105,699 MXN</span>
+        </div>
+        </article>
+        <article class="contenidoDis">
+        <div class="producto" data-categoria="pcs">
+        <img src="img/pc5.png" alt="pc X5" class="producto" data-categoria="pcs">
+        <h3>Ryzen 7 9800x3D RTX 5090 32GB RAM DDR5</h3>
+        <p>PC 5</p>
+        <span>$107,599 MXN</span>
+        </div>
+        </article>
+
+    </div>
+
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 IService. Todos los derechos reservados. Fernando Otero Muñiz.</p>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

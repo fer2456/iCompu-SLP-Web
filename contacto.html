@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Icompu
+  </title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/estilosRef.css" />
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="contenedor-logo">
+            <img src="img/logo.png" alt="Logo" class="logo" id="logo"/>
+        </div>
+      <ul class="nav-links">
+        <div class="active">
+          <li><a  href="index.html">Inicio</a></li>
+        </div>
+        <div>
+          <li><a href="productos.html">Productos</a></li>
+        </div>
+        <div>
+          <li><a  href="reparaciones.html">Reparaciones y Servicios</a></li>
+        </div>
+        <div>
+          <li><a class="active" href="contacto.html">Contacto</a></li>
+        </div>
+        <div style="padding-left: 30%;">
+          <form action="login.html"><input type="submit" title="Iniciar sesión" value="Iniciar sesión">
+            </form>
+          </div>
+      <div>
+        <form action="signup.html"><input type="submit" title="Registro" value="Registrarse">
+        </form>
+      </div>
+      </ul>
+      
+    </nav>
+  </header>
+  <section id="contacto" class="contacto-section">
+  <h2 class="titulo-animado">Contáctanos</h2>
+  <p class="titulo-animado">¿Tienes alguna pregunta o necesitas asistencia? ¡Estamos para ayudarte!</p>
+<div class="form-mapa-container">
+    <form action="php/enviar.php" method="POST" class="form-contacto">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+        <div class="g-recaptcha" data-sitekey="TU_SITE_KEY"></div>
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.8245018421117!2d-100.9678710906785!3d22.132666048869442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa377c09784c3%3A0x58d8dbb3b8eee6e6!2siCompu%20SLP!5e0!3m2!1ses!2smx!4v1748108828932!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 IService SLP</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

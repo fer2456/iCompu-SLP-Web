@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Icompu
+  </title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/estilosRef.css" />
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="contenedor-logo">
+            <img src="img/logo.png" alt="Logo" class="logo" id="logo"/>
+        </div>
+      <ul class="nav-links">
+        <div class="active">
+          <li><a  href="index.html">Inicio</a></li>
+        </div>
+        <div>
+          <li><a href="productos.html">Productos</a></li>
+        </div>
+        <div>
+          <li><a class="active" href="reparaciones.html">Reparaciones y Servicios</a></li>
+        </div>
+        <div>
+          <li><a href="contacto.html">Contacto</a></li>
+        </div>
+        <div style="padding-left: 30%;">
+          <form action="login.html"><input type="submit" title="Iniciar sesión" value="Iniciar sesión">
+            </form>
+          </div>
+      <div>
+        <form action="signup.html"><input type="submit" title="Registro" value="Registrarse">
+        </form>
+      </div>
+      </ul>
+    </nav>
+  </header>
+  <h2 class="reparacion-section">Agendar servicio especializado</h2>
+  <section class="reparacion-section">
+  <form action="php/guardarREP.php" method="POST" class="form-contacto">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="servicio">Servicio requerido:</label>
+    <select id="servicio" name="servicio" required class="desplegable-reparaciones" required onchange="toggleOtroServicio(this)">
+      <option value="">-- Selecciona --</option>
+      <option value="Reemplazo de pantalla">Reemplazo de pantalla</option>
+      <option value="Cambio de batería">Cambio de batería</option>
+      <option value="Puertos de carga">Reparación de puertos de carga</option>
+      <option value="Problemas de software">Solución de software</option>
+      <option value="Limpieza y mantenimiento">Limpieza preventiva</option>
+      <option value="Otro">Otro...</option>
+    </select>
+
+    <div id="otro-servicio-div" style="display: none;" >
+      <label for="otro_servicio">Describe el problema:</label><br>
+      <textarea id="otro_servicio" name="otro_servicio" rows="4" cols="40" ></textarea>
+    </div>
+
+    <label for="fecha">Fecha deseada:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="comentario">Comentarios:</label>
+    <textarea id="comentario" name="comentario" rows="2" cols="40"></textarea>
+
+    <button type="submit" class="btn">Agendar</button>
+  </form>
+  </section><br><br>
+    <section id="reparaciones" class="reparacion-section">
+  <h2>Servicios de Reparación y Servicio técnico especializado</h2>
+  <p>Ofrecemos asesoramiento y reparación profesional para laptops, PCs, y más.</p>
+
+  <!--<ul class="lista-reparaciones">
+    <li>Reemplazo de pantalla</li>
+    <li>Cambio de batería</li>
+    <li>Reparación de puertos de carga</li>
+    <li>Solución de problemas de software</li>
+    <li>Limpieza interna y mantenimiento preventivo</li>
+  </ul>
+-->
+  <a href="#contacto" class="btn">Contáctanos para una cotización</a><br><br>
+</section>
+
+  <footer>
+    <p>&copy; 2025 IService SLP</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

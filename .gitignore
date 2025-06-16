@@ -1,0 +1,29 @@
+# Archivos del entorno de desarrollo
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Variables de entorno y config
+.env
+.env.*
+
+# Dependencias (por si luego usas Composer)
+vendor/
+
+# Cachés
+cache/
+*.cache
+
+# Archivos ocultos o de sistema web
+*.swp
+*.swo

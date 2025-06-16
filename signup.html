@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body id="login" style="align-items: center;">
+    <form action="php/regUsuarios.php" method="POST">
+    <p class="log" style="border: none; text-align: center;"><strong>Nombre completo</strong></p>
+    <input type="text" name="nombre" class="logput" id="nombre">
+    <p class="log" style="border: none; text-align: center;"><strong>E-mail</strong></p>
+    <input type="text" name="usuario" class="logput" id="usuario">
+    <p class="log" style="border: none; text-align: center;"><strong>Contraseña</strong></p>
+    <input type="text" name="password" class="logput" id="password"><br><br>
+    <p class="log" style="border: none; text-align: center;"><strong>Confirmar contraseña</strong></p>
+    <input type="text" name="confPassword" class="logput" id="confPassword"><br><br>
+    <input type="submit" class="logput" value="Iniciar sesión">
+    </form>
+</body>
+</html>

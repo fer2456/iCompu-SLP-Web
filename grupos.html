@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupos de WhatsApp - San Luis Potosí</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2a7ae2;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .group-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .group {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px 20px;
+      width: 300px;
+      transition: transform 0.2s;
+    }
+
+    .group:hover {
+      transform: scale(1.03);
+    }
+
+    .group-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .group a {
+      display: inline-block;
+      padding: 8px 12px;
+      background: #2a7ae2;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .group a:hover {
+      background: #1f5cbf;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grupos de WhatsApp</h1>
+  <p class="description">
+    San Luis Potosí · Compra · Venta · Renta · Trabajo · Tecnología · Mascotas · Eventos y más 💰🏠👟📱🍱
+  </p>
+
+  <div class="group-list">
+    <!-- Grupos generados automáticamente -->
+    <script>
+      const grupos = [
+        ["Ropa, Zapatos, Maquillaje - Mujeres SLP", "https://chat.whatsapp.com/D8BBRlUhvJ3J3hZtq5WqxD"],
+        ["BAZARES SAN LUIS POTOSÍ", "https://chat.whatsapp.com/JMoZYNIGkvWDcJWbc5Lv0H"],
+        ["Tenis, Gorras, Chamarras, Ropa Original - S.L.P", "https://chat.whatsapp.com/H41t9H2laELDLqdaTZEkCh"],
+        ["Bolsa de Trabajo - SLP", "https://chat.whatsapp.com/HyjcRZlMEunB9AcVB3LFth"],
+        ["Venta de Celulares y Computadoras", "https://chat.whatsapp.com/HjJt1iTJ6kNHa1EUNuffi9"],
+        ["Renta de Casas SLP", "https://chat.whatsapp.com/Jm4vOqDaTKULGwzXXmlauf"],
+        ["Todo para tu casa", "https://chat.whatsapp.com/KfTH49xOr6gK0Ig55891KF"],
+        ["CeLuLaRes, CoNsoLaS, CoMpuTadoras, VideOjuEgOs SLP", "https://chat.whatsapp.com/ChS8OWlkRheLFh6mClr8CK"],
+        ["iPhone - iPad - Apple Watch - Macbook SLP", "https://chat.whatsapp.com/DfANXhyhzwt6k7jCbXTNyc"],
+        ["Mercado Libre Morales / Saucito SLP", "https://chat.whatsapp.com/E1OD5vxYpEXL0JfQRZoGac"],
+        ["BAZAR DE QUINTAS, CACTUS Y ALREDEDORES", "https://chat.whatsapp.com/Fsbn793IBir0sst6kSVDgk"],
+        ["Publica tu negocio SLP", "https://chat.whatsapp.com/CvAoUZNIErOLbr1IVisSYE"],
+        ["Compra y venta de Autos - Motos - Camionetas", "https://chat.whatsapp.com/JTlH43ZimyRGo21uaQjTcN"],
+        ["Comida a Domicilio SLP", "https://chat.whatsapp.com/LPjpD7kdubBIMJrJa3u75i"],
+        ["Se vende chingadera y media", "https://chat.whatsapp.com/L96Y62LNh8LIDGkxhPqDAR"],
+        ["Ventas por zona V. Dorado/Dalias/B.Anaya", "https://chat.whatsapp.com/IQEWLOivHmTKFJiqES8EZc"],
+        ["Ventas por zona Himno Nacional / Carranza", "https://chat.whatsapp.com/EgJO4YBZM1JEgSkOoaEP8G"],
+        ["Ventas por zona Lomas / Himalaya / Pedregal", "https://chat.whatsapp.com/KUPJzatZIJ1Bk1kJSCz3sH"],
+        ["Ventas por zona Centro / Fundadores / Universidad", "https://chat.whatsapp.com/IGEUi4b9WGWJGunqim5R3K"],
+        ["Ventas por zona Soledad / Av. México / Hogares", "https://chat.whatsapp.com/KXH3wj6xd6yK4aF684jgeF"],
+        ["Ventas por zona Abastos / Galvez / Tecnológico", "https://chat.whatsapp.com/GWMCkIh9a5n6Uaz0A335ZW"],
+        ["Ventas por zona Muñoz / Las vías / Mezquital", "https://chat.whatsapp.com/FxsNj1y4RSDIvXrYqSjoyt"],
+        ["Mascotas / Perros / Gatos SLP", "https://chat.whatsapp.com/IsOYlTXNTgWGE0g1OlRGod"],
+        ["Fiestas y Eventos SLP", "https://chat.whatsapp.com/Feqxk6dKJqI8Dd317gkPw5"],
+        ["Market Place SLP", "https://chat.whatsapp.com/GdTSQjJ3fIx8ut0Z3OyH9B"],
+        ["Bicicletas / Juguetes SLP", "https://chat.whatsapp.com/FBxIMkOfLMy0yYeWrsutqO"],
+        ["Ropa / Zapatos / Tenis para Hombre", "https://chat.whatsapp.com/ExNnAaD4YPVF6z7yRUtixa"],
+        ["Zona Industrial - Bolsa de Trabajo", "https://chat.whatsapp.com/Kjn6nx1zBxoJO8JBhKbRw0"],
+        ["Autos - Sonido - Piezas - Yonke", "https://chat.whatsapp.com/KC5GOrmaF3I1pgHvPT85ij"],
+        ["Renta de cuartos SLP", "https://chat.whatsapp.com/Lp08j37kkYbCZq0feDHB6t"],
+        ["Ventas en Pozos / Zona Industrial", "https://chat.whatsapp.com/L6y7Umn3OBc2meCOJGbDyw"],
+        ["Renta y venta en Pozos / Natura / Pilas", "https://chat.whatsapp.com/KV4wzoqcoRv193fFmev6H3"],
+        ["Comida a domicilio en Pozos", "https://chat.whatsapp.com/JctkpP1GnrHGS0ev9sVmVu"],
+        ["Ventas Villa de Pozos", "https://chat.whatsapp.com/HDOK0wlD9yEHHy2N9rzTN4"],
+        ["Trueque masivo en SLP", "https://chat.whatsapp.com/Cn1ZurqW3bL7pZAg4l5wTg"],
+        ["Mujeres Emprendedoras SLP", "https://chat.whatsapp.com/FplMxggfYMRE1O91vuvhP5"],
+        ["Tianguis / Mercados / Productos SLP", "https://chat.whatsapp.com/GM19L343zzF0IfIthUCtrt"],
+        ["Todo de $50 a $500 SLP", "https://chat.whatsapp.com/Dzeo0qvjU6iFujzmrdRsqB"],
+        ["Diabetes / Hipertensión / Sobrepeso", "https://chat.whatsapp.com/LgUahPcZaMZBft8hZjMtx7"],
+        ["Noticias / Reportes SLP", "https://chat.whatsapp.com/EtSIMCJjR961NbSYHgOKQi"],
+        ["Tráfico / Accidentes SLP", "https://chat.whatsapp.com/HgC2nOUxExgL7vvdeBsqh6"],
+        ["Transporte / Envíos / Mudanza SLP", "https://chat.whatsapp.com/KJV8pXVBM4fAyLzVWdEaJH"],
+        ["Cursos / Escuelas / Maestros SLP", "https://chat.whatsapp.com/I2t2zf7Ze3mEmqw5i5lftR"],
+        ["Técnicos / Plomeros / Albañiles SLP", "https://chat.whatsapp.com/CGk9aQrBAGuEt3EfLWxYYJ"],
+        ["Deportes / Gym / Yoga / Crossfit SLP", "https://chat.whatsapp.com/KDAkpLxc1UJKRgOidwpL4d"],
+        ["Ubers / DiDi / Repartidores SLP", "https://chat.whatsapp.com/KPQKEQJBeiU7xXfe12gA9e"]
+      ];
+
+      grupos.forEach(([titulo, link]) => {
+        document.write(`<div class="group"><div class="group-title">${titulo}</div><a href="${link}" target="_blank">Unirse al grupo</a></div>`);
+      });
+    </script>
+  </div>
+</body>
+</html>

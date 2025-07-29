@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupos de Facebook - San Luis Potosí</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #6b6a6a;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2a9ee2;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .group-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .group {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px 20px;
+      width: 300px;
+      transition: transform 0.2s;
+    }
+
+    .group:hover {
+      transform: scale(1.03);
+    }
+
+    .group-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 20%;
+    }
+
+    .group a {
+      display: inline-block;
+      padding: 8px 12px;
+      background: #2ae2d9;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .group a:hover {
+      background: #1f7fbf;
+    }
+
+    .top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <img src="img/logo_Mesa de trabajo 1.png" alt="">
+    <h1>Grupos de Facebook 2025</h1>
+  </div>
+
+  <p class="description">
+    San Luis Potosí · Compra · Venta · Renta · Empleo · Tecnología · Casas · Accesorios 💻🏠📱👟
+  </p>
+
+  <div class="group-list">
+    <script>
+      const gruposFB = [
+        ["Videojuegos San Luis Potosí", "https://www.facebook.com/share/g/1GJYDR475s/?mibextid=wwXIfr"],
+        ["Ventas Mercado libre SLP", "https://www.facebook.com/share/g/16tuadarUy/?mibextid=wwXIfr"],
+        ["Ventas de todo San Luis Potosí", "https://www.facebook.com/share/g/16rsCVtuD8/?mibextid=wwXIfr"],
+        ["La señora y el señor de las Lomas SLP", "https://www.facebook.com/share/g/18uMS7SxzN/?mibextid=wwXIfr"],
+        ["Compra y venta de celulares SLP", "https://www.facebook.com/share/g/19NfRzUGLp/?mibextid=wwXIfr"],
+        ["Privadas en Pozos SLP", "https://www.facebook.com/share/g/1EjWFkZTGf/?mibextid=wwXIfr"],
+        ["Nenis compra y venta SLP", "https://www.facebook.com/share/g/12MEmZKvSZJ/?mibextid=wwXIfr"],
+        ["El poder de las ventas SLP", "https://www.facebook.com/share/g/19TtkaP78b/?mibextid=wwXIfr"],
+        ["Autos motos celulares SLP", "https://www.facebook.com/share/g/1Dod21A2Gk/?mibextid=wwXIfr"],
+        ["Banaya - Valle Dorado - Abastos - Dalias", "https://www.facebook.com/share/g/16CcyBB94Y/?mibextid=wwXIfr"],
+        ["Mercado libre San Luis Potosí", "https://www.facebook.com/share/g/19eLn1V1C4/?mibextid=wwXIfr"],
+        ["Nenis Lomas - Himalaya SLP", "https://www.facebook.com/share/g/16fRhzTtdw/?mibextid=wwXIfr"],
+        ["Computadoras y Célulares SLP", "https://www.facebook.com/share/g/16wtQg9wqb/?mibextid=wwXIfr"],
+        ["Venta de Celulares 📱 San Luis Potosí", "https://www.facebook.com/groups/766773803421143/?ref=share_group_link"],
+        ["Mercado libre sin restricciones SLP", "https://www.facebook.com/groups/1380843678731375/?ref=share_group_link"],
+        ["Bolsa de empleo San Luis Potosí", "https://www.facebook.com/groups/1041166389413768/?ref=share_group_link"],
+        ["Tenis, Ropa, Accesorios SLP", "https://www.facebook.com/groups/591199871081311/?ref=share_group_link"],
+        ["Apple (iPhone, iPad, etc.) SLP", "https://www.facebook.com/groups/582636671823018/?ref=share_group_link"],
+        ["Ropa, Zapatos, Maquillaje Mujeres SLP", "https://www.facebook.com/groups/471515446322888/?ref=share_group_link"],
+        ["Bazar de $50 a $150", "https://www.facebook.com/groups/407362326286522/?ref=share_group_link"],
+        ["Tenis, Gorras, Ropa Original SLP", "https://www.facebook.com/groups/662547347267083/?ref=share_group_link"],
+        ["Solo celulares SLP", "https://www.facebook.com/groups/MULTIOFERTAS/?ref=share_group_link"],
+        ["Audio, Llantas, Carros SLP", "https://www.facebook.com/groups/audiocarslp/?ref=share_group_link"],
+        ["Mercado libre SLP sin restricciones", "https://www.facebook.com/groups/mercadolibreensanluisp/?ref=share_group_link"],
+        ["Compra y venta SLP", "https://www.facebook.com/groups/349784338438040/?ref=share_group_link"],
+        ["Mercado libre Villa de Pozos", "https://www.facebook.com/groups/283437168704781/?ref=share_group_link"],
+        ["Comida a Domicilio SLP", "https://www.facebook.com/groups/233950607877414/?ref=share_group_link"],
+        ["Bolsa de trabajo SLP Oficial", "https://www.facebook.com/groups/382809391857347/?ref=share_group_link"],
+        ["Consolas, videojuegos, celulares SLP", "https://www.facebook.com/groups/232641553586826/?ref=share_group_link"],
+        ["Plaza de la Tecnología SLP", "https://www.facebook.com/groups/501244013239277/?ref=share_group_link"],
+        ["Ventas Potosinas", "https://www.facebook.com/groups/189436784530520/?ref=share_group_link"],
+        ["Venta de Casas SLP", "https://www.facebook.com/groups/171330536868528/?ref=share_group_link"],
+        ["Casas en Renta y Venta SLP", "https://www.facebook.com/groups/2213664442247971/?ref=share_group_link"],
+        ["Renta de Casas SLP", "https://www.facebook.com/groups/1632383170158292/?ref=share_group_link"],
+        ["Renta y venta en Rioverde", "https://www.facebook.com/groups/239428116510057/?ref=share_group_link"],
+        ["Todo para tu casa SLP", "https://www.facebook.com/groups/692542667493698/?ref=share_group_link"],
+        ["Renta de Locales SLP", "https://www.facebook.com/groups/864324037049952/?ref=share_group_link"],
+        ["Bazar zona Salk-Constitución-Calzada", "https://www.facebook.com/groups/568834209981486/?ref=share_group_link"],
+        ["Videojuegos y Juguetes SLP", "https://www.facebook.com/groups/602360549864580/?ref=share_group_link"],
+        ["Audio para Carros SLP", "https://www.facebook.com/groups/751179898231771/?ref=share_group_link"],
+        ["Trueque masivo en SLP ✅", "https://www.facebook.com/groups/1936951029719641/?ref=share_group_link"],
+        ["Bazar $50 a $1000 SLP", "https://www.facebook.com/groups/692542667493698/?ref=share_group_link"],
+        ["Se vende chingadera y media SLP", "https://www.facebook.com/groups/471515446322888/?ref=share_group_link"],
+        ["Ventas SLP - Pozos - Soledad - Morales - Lomas", "https://www.facebook.com/share/g/16triSrss7/?mibextid=wwXIfr"],
+        ["Mujeres Emprendedoras SLP", "https://www.facebook.com/share/g/1Fm7ME7qSh/?mibextid=wwXIfr"]
+      ];
+
+      gruposFB.forEach(([titulo, link]) => {
+        document.write(`<div class="group"><div class="group-title">${titulo}</div><a href="${link}" target="_blank">Visitar grupo</a></div>`);
+      });
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>iTools – web / app / whatsapp</title>
+<style>
+  :root{
+    --icon-size: 84px;         /* tamaño de los iconos */
+    --gap: 22px;               /* espacio entre icono y texto */
+    --row-gap: 56px;           /* espacio entre filas */
+    --text-size: clamp(28px, 7vw, 58px);
+    --font: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+  html,body{
+    background:#fff;
+    margin:0;
+    font-family:var(--font);
+    color:#000;
+  }
+  .wrap{
+    max-width: 720px;
+    margin: 40px auto 60px;
+    padding: 0 16px;
+  }
+  .row{
+    display:flex;
+    align-items:center;
+    gap: var(--gap);
+    margin-bottom: var(--row-gap);
+  }
+  .icon{
+    width: var(--icon-size);
+    height: var(--icon-size);
+    flex: 0 0 var(--icon-size);
+  }
+  .label{
+    font-weight: 900;
+    line-height: .95;
+    font-size: var(--text-size);
+    letter-spacing: 0;
+  }
+  .label span{ display:block; }
+  /* Elimina subrayado si usas <a> como contenedor de una fila */
+  a.row{ text-decoration: none; color: inherit; }
+  /* Pequeña mejora para pantallas muy estrechas */
+  @media (max-width: 360px){
+    :root{ --icon-size:72px; --row-gap:44px; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+
+    <!-- Fila 1: iTools web  (pon tu enlace en href si quieres que sea clicable) -->
+    <a class="row" href="#">
+      <!-- Icono monitor: círculo negro sólido con monitor blanco -->
+      <svg class="icon" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="48" fill="#000"/>
+        <rect x="23" y="24" width="54" height="38" rx="3" fill="#fff"/>
+        <rect x="40" y="66" width="20" height="5" fill="#fff"/>
+        <rect x="33" y="71" width="34" height="6" rx="3" fill="#fff"/>
+      </svg>
+
+      <div class="label">
+        <span>iTools</span>
+        <span>web</span>
+      </div>
+    </a>
+
+    <!-- Fila 2: iTools app -->
+    <a class="row" href="#">
+      <!-- Icono celular: círculo contorno negro con teléfono negro -->
+      <svg class="icon" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#000" stroke-width="8"/>
+        <rect x="37" y="23" width="26" height="54" rx="6" fill="none" stroke="#000" stroke-width="8"/>
+        <circle cx="50" cy="69" r="3.8" fill="#000"/>
+      </svg>
+
+      <div class="label">
+        <span>iTools</span>
+        <span>app</span>
+      </div>
+    </a>
+
+    <!-- Fila 3: iTools whatsapp -->
+    <a class="row" href="#">
+      <!-- Icono WhatsApp estilizado en negro -->
+      <svg class="icon" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#000" stroke-width="8"/>
+        <!-- globo de chat -->
+        <path d="M28 70l4-10" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round" />
+        <!-- auricular + cola -->
+        <path d="M39 38c0 14 17 23 21 23 3 0 5-2 6-4" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round" />
+        <!-- cola del globo -->
+        <path d="M32 72c6-1 9 0 9 0" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+      </svg>
+
+      <div class="label">
+        <span>iTools</span>
+        <span>whatsapp</span>
+      </div>
+    </a>
+
+  </main>
+</body>
+</html>

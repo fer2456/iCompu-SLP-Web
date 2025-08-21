@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ikase • Fundas para teléfonos</title>
+  <meta name="description" content="Fundas resistentes y con estilo para tu smartphone. Envíos a todo México." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --brand:#ff3b64; --ink:#0b1020; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; color: var(--ink); }
+    /* ---- HERO BACKGROUND IMAGE ----
+       Reemplaza la ruta de abajo por la de tu imagen si es necesario.
+       Coloca tu archivo como ./img/header.jpg y cambia url() a esa ruta.
+       Actualmente apunta a "header.jpg" en el mismo directorio. */
+    .hero-bg {
+      background-image: url('header.jpg');
+      background-size: cover; 
+      background-position: center;
+    }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,.72); }
+    .card { box-shadow: 0 10px 30px rgba(16,24,40,.08); }
+  </style>
+</head>
+<body class="bg-neutral-50">
+  <!-- Top Bar -->
+  <div class="w-full bg-black text-white text-xs md:text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <p class="opacity-80">Envío GRATIS en pedidos mayores a $999</p>
+      <a href="#contacto" class="underline underline-offset-4 hover:opacity-80">Soporte</a>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4">
+      <a href="#" class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-xl bg-black grid place-items-center text-white font-extrabold">K</div>
+        <span class="font-extrabold tracking-tight text-lg">ikase</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 ml-6 text-sm font-medium">
+        <a href="#catalogo" class="hover:text-[var(--brand)]">Catálogo</a>
+        <a href="#colecciones" class="hover:text-[var(--brand)]">Colecciones</a>
+        <a href="#beneficios" class="hover:text-[var(--brand)]">Beneficios</a>
+        <a href="#faq" class="hover:text-[var(--brand)]">FAQ</a>
+      </nav>
+      <div class="ml-auto flex items-center gap-2">
+        <input type="search" id="search" placeholder="Buscar modelo, color…" class="hidden md:block w-72 rounded-xl border border-neutral-300 bg-white px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--brand)]/30" />
+        <a href="#whatsapp" class="rounded-xl bg-[var(--brand)] text-white px-4 py-2 text-sm font-semibold hover:opacity-90">Comprar por WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg relative">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-4 py-16 md:py-24 relative z-10">
+      <div class="glass rounded-3xl p-6 md:p-10 max-w-3xl">
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Protege tu teléfono con estilo</h1>
+        <p class="mt-3 md:mt-4 text-base md:text-lg text-neutral-700">Fundas premium para iPhone, Samsung y más. Resistencia real, agarre cómodo y diseños que combinan contigo.</p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#catalogo" class="rounded-xl bg-[var(--brand)] text-white px-5 py-3 font-semibold">Ver catálogo</a>
+          <a href="#beneficios" class="rounded-xl border border-neutral-300 px-5 py-3 font-semibold">¿Por qué ikase?</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLECCIONES DESTACADAS -->
+  <section id="colecciones" class="max-w-7xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-extrabold">Colecciones</h2>
+    <p class="mt-2 text-neutral-600">Elige tu estilo: minimal, blindadas o con tarjetero.</p>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-8">
+      <a class="group relative overflow-hidden rounded-3xl card" href="#catalogo">
+        <img src="https://images.unsplash.com/photo-1587825140400-5fdc3107c0a5?q=80&w=1600&auto=format&fit=crop" alt="Fundas color sólido" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-xl font-bold">Color Sólido</h3>
+          <p class="opacity-90 text-sm">Acabado suave, mil combinaciones.</p>
+        </div>
+      </a>
+      <a class="group relative overflow-hidden rounded-3xl card" href="#catalogo">
+        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=1600&auto=format&fit=crop" alt="Fundas blindadas" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-xl font-bold">Blindadas Pro</h3>
+          <p class="opacity-90 text-sm">Protección militar contra caídas.</p>
+        </div>
+      </a>
+      <a class="group relative overflow-hidden rounded-3xl card" href="#catalogo">
+        <img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?q=80&w=1600&auto=format&fit=crop" alt="Fundas con tarjetero" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-xl font-bold">Tarjetero Slim</h3>
+          <p class="opacity-90 text-sm">Funcional y minimalista.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <section id="catalogo" class="bg-white border-y border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Catálogo</h2>
+          <p class="mt-2 text-neutral-600">Modelos más vendidos. Envios a todo México.</p>
+        </div>
+        <div class="hidden md:flex items-center gap-2">
+          <select class="rounded-xl border border-neutral-300 px-3 py-2 text-sm">
+            <option>iPhone</option>
+            <option>Samsung</option>
+            <option>Xiaomi</option>
+            <option>Motorola</option>
+          </select>
+          <select class="rounded-xl border border-neutral-300 px-3 py-2 text-sm">
+            <option>Todos los estilos</option>
+            <option>Color sólido</option>
+            <option>Blindadas</option>
+            <option>Tarjetero</option>
+            <option>Transparente</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Productos -->
+      <div id="productos" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8"></div>
+
+      <div class="mt-10 text-center">
+        <button id="verMas" class="rounded-xl border border-neutral-300 px-5 py-3 font-semibold hover:bg-neutral-50">Ver más</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="max-w-7xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-extrabold">¿Por qué elegir ikase?</h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-8">
+      <div class="card rounded-3xl p-6">
+        <h3 class="font-bold text-lg">Protección real</h3>
+        <p class="mt-2 text-neutral-600">Materiales certificados con pruebas de caída de hasta 2 metros en modelos blindados.</p>
+      </div>
+      <div class="card rounded-3xl p-6">
+        <h3 class="font-bold text-lg">Garantía 30 días</h3>
+        <p class="mt-2 text-neutral-600">Si no te encanta, lo cambiamos o te devolvemos tu dinero.</p>
+      </div>
+      <div class="card rounded-3xl p-6">
+        <h3 class="font-bold text-lg">Atención por WhatsApp</h3>
+        <p class="mt-2 text-neutral-600">Te ayudamos a elegir la funda ideal para tu modelo y estilo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA WhatsApp -->
+  <section id="whatsapp" class="bg-[var(--ink)] text-white">
+    <div class="max-w-7xl mx-auto px-4 py-14 grid md:grid-cols-2 items-center gap-8">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-extrabold">¿Listo para estrenar funda?</h2>
+        <p class="mt-2 opacity-90">Escríbenos por WhatsApp y te cotizamos al instante.</p>
+      </div>
+      <div class="md:text-right">
+        <a href="https://wa.me/5210000000000?text=Hola%20ikase%2C%20quiero%20comprar%20una%20funda" target="_blank" class="inline-block rounded-2xl bg-[var(--brand)] px-6 py-3 font-semibold hover:opacity-90">Abrir WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-extrabold">Preguntas frecuentes</h2>
+    <div class="mt-6 divide-y divide-neutral-200 border border-neutral-200 rounded-2xl overflow-hidden">
+      <details class="group p-5">
+        <summary class="cursor-pointer font-semibold">¿Tienen fundas para mi modelo?</summary>
+        <p class="mt-3 text-neutral-600">Sí, trabajamos con los modelos más recientes y populares de iPhone, Samsung, Xiaomi y Motorola. Pregúntanos por WhatsApp si tienes alguna duda.</p>
+      </details>
+      <details class="group p-5">
+        <summary class="cursor-pointer font-semibold">¿Cuánto tarda el envío?</summary>
+        <p class="mt-3 text-neutral-600">De 2 a 5 días hábiles en la mayoría de ciudades de México. En pedidos mayores a $999 el envío es gratis.</p>
+      </details>
+      <details class="group p-5">
+        <summary class="cursor-pointer font-semibold">¿Cómo funcionan los cambios o devoluciones?</summary>
+        <p class="mt-3 text-neutral-600">Tienes 30 días naturales desde que recibes tu compra. Escríbenos y te acompañamos en el proceso.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-neutral-100 border-t border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-black grid place-items-center text-white font-extrabold">K</div>
+          <span class="font-extrabold">ikase</span>
+        </div>
+        <p class="mt-3 text-neutral-600">Fundas para teléfonos con la mejor relación protección/diseño.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Compra</h4>
+        <ul class="mt-2 space-y-2 text-neutral-600">
+          <li><a href="#catalogo" class="hover:text-[var(--brand)]">Catálogo</a></li>
+          <li><a href="#colecciones" class="hover:text-[var(--brand)]">Colecciones</a></li>
+          <li><a href="#faq" class="hover:text-[var(--brand)]">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold">Contacto</h4>
+        <ul class="mt-2 space-y-2 text-neutral-600">
+          <li>WhatsApp: <a class="underline" href="https://wa.me/5210000000000">+52 1 000 000 0000</a></li>
+          <li>Correo: <a class="underline" href="mailto:hola@ikase.mx">hola@ikase.mx</a></li>
+          <li>Horario: Lun–Sáb 10:00–19:00</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold">Boletín</h4>
+        <form class="mt-2 flex gap-2">
+          <input type="email" required placeholder="Tu correo" class="w-full rounded-xl border border-neutral-300 px-3 py-2">
+          <button class="rounded-xl bg-[var(--brand)] text-white px-4 font-semibold">Unirme</button>
+        </form>
+      </div>
+    </div>
+    <div class="text-center text-neutral-500 text-xs pb-8">© <span id="year"></span> ikase. Todos los derechos reservados.</div>
+  </footer>
+
+  <script>
+    // Año footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Catálogo demo (puedes reemplazar por datos reales o traerlos de tu backend)
+    const base = [
+      { id:1, titulo:'Funda Color Sólido – Rojo', precio:349, etiqueta:'iPhone • Color sólido', img:'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=1200&auto=format&fit=crop' },
+      { id:2, titulo:'Funda Blindada Pro – Negra', precio:499, etiqueta:'Samsung • Blindada', img:'https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=1200&auto=format&fit=crop' },
+      { id:3, titulo:'Funda Transparente – Antiamarillamiento', precio:299, etiqueta:'iPhone • Transparente', img:'https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=1200&auto=format&fit=crop' },
+      { id:4, titulo:'Funda con Tarjetero – Azul', precio:429, etiqueta:'Xiaomi • Tarjetero', img:'https://images.unsplash.com/photo-1547955922-26be3c80f97c?q=80&w=1200&auto=format&fit=crop' },
+      { id:5, titulo:'Funda MagSafe – Verde Olivo', precio:459, etiqueta:'iPhone • MagSafe', img:'https://images.unsplash.com/photo-1591337676887-a217a6970a8b?q=80&w=1200&auto=format&fit=crop' },
+      { id:6, titulo:'Funda Rugged – Táctica', precio:549, etiqueta:'Motorola • Blindada', img:'https://images.unsplash.com/photo-1587825140400-5fdc3107c0a5?q=80&w=1200&auto=format&fit=crop' },
+      { id:7, titulo:'Funda Silicon Soft – Rosa', precio:349, etiqueta:'Samsung • Color sólido', img:'https://images.unsplash.com/photo-1591337676769-1b8d93bc1bd6?q=80&w=1200&auto=format&fit=crop' },
+      { id:8, titulo:'Funda Ultra Slim – Transparente', precio:279, etiqueta:'Xiaomi • Transparente', img:'https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1200&auto=format&fit=crop' }
+    ];
+
+    let page = 1; const perPage = 8; // simple paginación
+
+    function renderProductos(reset=false){
+      const cont = document.getElementById('productos');
+      if (reset) cont.innerHTML = '';
+      const slice = base.slice(0, perPage*page);
+      slice.forEach(p => {
+        if (document.getElementById('p'+p.id)) return;
+        const card = document.createElement('article');
+        card.id = 'p'+p.id;
+        card.className = 'card rounded-3xl overflow-hidden group bg-white';
+        card.innerHTML = `
+          <div class="relative">
+            <img loading="lazy" src="${p.img}" alt="${p.titulo}" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div class="absolute top-3 left-3 bg-white/90 text-xs font-semibold px-2 py-1 rounded-full">${p.etiqueta}</div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold leading-tight">${p.titulo}</h3>
+            <div class="mt-2 flex items-center justify-between">
+              <p class="font-extrabold text-lg">$${p.precio}</p>
+              <button class="add rounded-xl bg-[var(--ink)] text-white text-sm px-3 py-2">Agregar</button>
+            </div>
+          </div>`;
+        cont.appendChild(card);
+      });
+      if (perPage*page >= base.length) document.getElementById('verMas').style.display = 'none';
+    }
+
+    renderProductos(true);
+    document.getElementById('verMas').addEventListener('click', () => { page++; renderProductos(); });
+
+    // Búsqueda básica del catálogo
+    document.getElementById('search')?.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase();
+      const cont = document.getElementById('productos');
+      cont.querySelectorAll('article').forEach(el => el.remove());
+      base.filter(p => (p.titulo + ' ' + p.etiqueta).toLowerCase().includes(q))
+          .forEach(p => {
+            const card = document.createElement('article');
+            card.className = 'card rounded-3xl overflow-hidden group bg-white';
+            card.innerHTML = `
+              <div class="relative">
+                <img loading="lazy" src="${p.img}" alt="${p.titulo}" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute top-3 left-3 bg-white/90 text-xs font-semibold px-2 py-1 rounded-full">${p.etiqueta}</div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold leading-tight">${p.titulo}</h3>
+                <div class="mt-2 flex items-center justify-between">
+                  <p class="font-extrabold text-lg">$${p.precio}</p>
+                  <button class="add rounded-xl bg-[var(--ink)] text-white text-sm px-3 py-2">Agregar</button>
+                </div>
+              </div>`;
+            cont.appendChild(card);
+          });
+    });
+  </script>
+</body>
+</html>
